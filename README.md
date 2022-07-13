@@ -1,17 +1,94 @@
-What is Web Scraping?
+Natural Language Processing (NLP) is a scientific field working on interactions between computers and human written language. The machines are programmed and taught to understand the text and extract information.
 
-Web Scraping deals with collecting web data and information in an automated manner. Basically, it is the extraction of web data. Web Scraping deals with information retrieval, newsgathering, web monitoring, competitive marketing and more. The use of web scraping makes accessing the vast amount of information online, easy and simple. It is a lot faster and simpler than manually extracting data from websites. Web Scraping is becoming more popular these days. An online data scraping script can make a lot of data gathering and information extraction easy and simple.
+Sentiment analysis (or opinion mining) is a natural language processing (NLP) technique used to determine whether data is positive, negative or neutral. Sentiment analysis is often performed on textual data to help businesses monitor brand and product sentiment in customer feedback, and understand customer needs.
+
+What Is Sentiment Analysis?
+
+Sentiment analysis is the process of detecting positive or negative sentiment in text. It’s often used by businesses to detect sentiment in social data, gauge brand reputation, and understand customers.
+
+Types of Sentiment Analysis
+Sentiment analysis focuses on the polarity of a text (positive, negative, neutral) but it also goes beyond polarity to detect specific feelings and emotions (angry, happy, sad, etc), urgency (urgent, not urgent) and even intentions (interested v. not interested).
+
+Depending on how you want to interpret customer feedback and queries, you can define and tailor your categories to meet your sentiment analysis needs. In the meantime, here are some of the most popular types of sentiment analysis:
+
+Graded Sentiment Analysis
+If polarity precision is important to your business, you might consider expanding your polarity categories to include different levels of positive and negative:
+
+Very positive
+Positive
+Neutral
+Negative
+Very negative
+This is usually referred to as graded or fine-grained sentiment analysis, and could be used to interpret 5-star ratings in a review, for example:
+
+Very Positive = 5 stars
+Very Negative = 1 star
+Emotion detection
+Emotion detection sentiment analysis allows you to go beyond polarity to detect emotions, like happiness, frustration, anger, and sadness.
+
+Many emotion detection systems use lexicons (i.e. lists of words and the emotions they convey) or complex machine learning algorithms.
+
+One of the downsides of using lexicons is that people express emotions in different ways. Some words that typically express anger, like bad or kill (e.g. your product is so bad or your customer support is killing me) might also express happiness (e.g. this is bad ass or you are killing it).
+
+Aspect-based Sentiment Analysis
+Usually, when analyzing sentiments of texts you’ll want to know which particular aspects or features people are mentioning in a positive, neutral, or negative way.
+
+That's where aspect-based sentiment analysis can help, for example in this product review: "The battery life of this camera is too short", an aspect-based classifier would be able to determine that the sentence expresses a negative opinion about the battery life of the product in question.
+
+Multilingual sentiment analysis
+Multilingual sentiment analysis can be difficult. It involves a lot of preprocessing and resources. Most of these resources are available online (e.g. sentiment lexicons), while others need to be created (e.g. translated corpora or noise detection algorithms), but you’ll need to know how to code to use them.
+
+Alternatively, you could detect language in texts automatically with a language classifier, then train a custom sentiment analysis model to classify texts in the language of your choice.
+
+Why Is Sentiment Analysis Important?
+Since humans express their thoughts and feelings more openly than ever before, sentiment analysis is fast becoming an essential tool to monitor and understand sentiment in all types of data.
+
+Automatically analyzing customer feedback, such as opinions in survey responses and social media conversations, allows brands to learn what makes customers happy or frustrated, so that they can tailor products and services to meet their customers’ needs.
+
+For example, using sentiment analysis to automatically analyze 4,000+ open-ended responses in your customer satisfaction surveys could help you discover why customers are happy or unhappy at each stage of the customer journey.
+
+Maybe you want to track brand sentiment so you can detect disgruntled customers immediately and respond as soon as possible. Maybe you want to compare sentiment from one quarter to the next to see if you need to take action. Then you could dig deeper into your qualitative data to see why sentiment is falling or rising.
+
+The overall benefits of sentiment analysis include:
+
+Sorting Data at Scale
+Can you imagine manually sorting through thousands of tweets, customer support conversations, or surveys? There’s just too much business data to process manually. Sentiment analysis helps businesses process huge amounts of unstructured data in an efficient and cost-effective way.
+
+Real-Time Analysis
+Sentiment analysis can identify critical issues in real-time, for example is a PR crisis on social media escalating? Is an angry customer about to churn? Sentiment analysis models can help you immediately identify these kinds of situations, so you can take action right away.
+
+Consistent criteria
+It’s estimated that people only agree around 60-65% of the time when determining the sentiment of a particular text. Tagging text by sentiment is highly subjective, influenced by personal experiences, thoughts, and beliefs.
+
+By using a centralized sentiment analysis system, companies can apply the same criteria to all of their data, helping them improve accuracy and gain better insights.
+
+The applications of sentiment analysis are endless. So, to help you understand how sentiment analysis could benefit your business, let’s take a look at some examples of texts that you could analyze using sentiment analysis.
+
+Then, we’ll jump into a real-world example of how Chewy, a pet supplies company, was able to gain a much more nuanced (and useful!) understanding of their reviews through the application of sentiment analysis.
+
+Sentiment Analysis Examples
+To understand the goal and challenges of sentiment analysis, here are some examples:
+
+Basic examples of sentiment analysis data
+
+Netflix has the best selection of films
+Hulu has a great UI
+I dislike like the new crime series
+I hate waiting for the next series to come out
+More challenging examples of sentiment analysis
+
+I do not dislike horror movies. (phrase with negation)
+Disliking horror movies is not uncommon. (negation, inverted word order)
+Sometimes I really hate the show. (adverbial modifies the sentiment)
+I love having to wait two months for the next series to come out! ( sarcasm)
+The final episode was surprising with a terrible twist at the end (negative term used in a positive way)
+The film was easy to watch but I would not recommend it to my friends. (difficult to categorize)
+I LOL’d at the end of the cake scene (often hard to understand new terms)
 
 
-Applications of Web Scraping-
-Web scraping has a lot of uses, in reputation monitoring, data analysis, lead generation, research, and so on.
-
-1. There is a huge demand for web scraping in the financial world. Text analysis tools extract data from business and economics news articles, and these insights are used by Bankers and Analysts to drive investment strategies. Tweets influence stocks and the overall stock market a lot. Information regarding that can be scraped from Twitter. Similarly, financial analysts can scrape financial data from public platforms like Yahoo finance and so on. All these methods are very helpful in the financial world where quick access to data can make or break profits.
-
-2. E-Commerce websites use web scraping to understand pricing strategies and see what prices are set by their competitors. Analysts and Market Research teams use data from web scraping to drive the pricing models. This application is known as price intelligence. The data scraped, can be used to make better pricing decisions. It can be done through revenue optimization, competitor monitoring, price trend analysis, and so on.
-
-3. Market research is also very important, and the data scraped can be used to optimize the offerings and product delivery strategy of a company. Also, the data can be used for various research and development purposes.
-
-4. Text analytics of reviews and customer comments also helps E-Commerce websites in driving their strategy and methods. Such data can also help in planning the brand strategy of companies.
-
-5. Now, the application we will be implementing is Content and News monitoring and sentiment analysis. News websites and content are scraped to understand the general sentiment, opinion, and general happenings.
+Library used
+Pandas
+Regex
+beautifulsoups4
+NLTK
+SkLearn
